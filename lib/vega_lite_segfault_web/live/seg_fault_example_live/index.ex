@@ -11,7 +11,7 @@ defmodule VegaLiteSegfaultWeb.SegFaultExampleLive.Index do
     {
       :ok,
       socket
-      |> assign(:plot, plot)
+      # |> assign(:plot, plot)
     }
   end
 
