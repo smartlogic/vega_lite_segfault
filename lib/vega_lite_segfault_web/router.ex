@@ -17,7 +17,8 @@ defmodule VegaLiteSegfaultWeb.Router do
   scope "/", VegaLiteSegfaultWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    # get "/", PageController, :home
+    live "/", SegFaultExampleLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
