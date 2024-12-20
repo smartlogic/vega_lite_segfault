@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: ./pgdata/data
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pgdata:/pgdata
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
