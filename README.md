@@ -21,14 +21,14 @@ This repo was built to use a Nix development environment, but any should suffice
 1. Build the Nix Flake derivation:
 
   ```bash
-   cd indoor_air_quality
+   cd vega_lite_segfault
    direnv allow .
    ```
 1. Once the output stops, check that you have access to Elixir 1.17:
 
 
   ```bash
-   indoor_air_quality (nix-flake-setup)> elixir --version
+   vega_lite_segfault (nix-flake-setup)> elixir --version
    Erlang/OTP 27 [erts-15.0] [source] [64-bit] [smp:14:14] [ds:14:14:10] [async-threads:1] [jit]
 
    Elixir 1.17.3 (compiled with Erlang/OTP 27)
